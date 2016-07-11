@@ -1,6 +1,8 @@
 node ('android') {
     stage 'Checkout'
     echo "My branch is: ${env.BRANCH_NAME}"
+    sh "ifconfig"
+    sh "ls /home/jenkins"
     checkout scm
 
     dir ("MagicMirror") {
